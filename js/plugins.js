@@ -202,7 +202,7 @@
     $window.on('resize', $.proxy(this.sizeOverlay, this));
 
     $('select, object, embed').css({
-      visibility: 'hidden'
+      visibility: 'visible'
     });
 
     this.sizeOverlay();
