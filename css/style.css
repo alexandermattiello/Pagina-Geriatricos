@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
-    background-color: lightslategrey;
 }
 /* ------------------------------------------------------------------------
                                 NAV
@@ -112,6 +111,7 @@ nav .logo {
     grid-auto-rows: minmax(250px,auto);
     gap: 20px;
     padding: 105px 40px 10px 20px;
+    background-color: lightslategrey;
 }  
 
 .grid-item {
@@ -137,3 +137,15 @@ nav .logo {
   cursor: pointer!important;
 }
 
+.parallax-section {
+  background-color: lightslategrey;
+}
+
+.text-uppercase {
+  background-color: lightslategrey;
+  margin: 0!important;
+  padding-top: 70px;
+  font-size: 90px;
+  text-shadow: 2px 2px cornsilk;
+  font-style: normal;
+}

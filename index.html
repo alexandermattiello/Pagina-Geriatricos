@@ -40,6 +40,9 @@
       <link rel="stylesheet" href="css/templatemo-style.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
 
+      <link rel="stylesheet" href="css/floating-wpp.min.css">
+      <link rel="stylesheet" href="css/floating-wpp.css">
+
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -55,6 +58,24 @@
         <span></span>
       </div>
     </nav>
+    <div id="video-container">
+     <div class="video-overlay"></div>
+     <div class="video-content">
+         <div class="inner">
+           <h1>Bienvenidos a Grupo<em>XY</em></h1>
+           <p>Donde podras encontrar un lugar xxxxx</p>
+           <p>Para que logres xxxxxxxxxxxx</p>
+             <div class="scroll-icon">
+                 <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
+             </div>    
+         </div>
+     </div>
+     <video autoplay loop muted>
+          <source src="highway-loop.mp4" type="video/mp4" />
+     </video>
+ </div>
+
+
     <section class="overlay-menu">
         <div class="container">
           <div class="row">
@@ -84,7 +105,9 @@
           </div>
         </div>
       </section>
-
+<div>
+          <h2 class="text-uppercase text-center">Visita nuestras casas</h2>
+</div>
  <div class="grid-container">
      <div class="grid-item" style="background-image: url(img/1.jpg);"><a href="Inner pages/home1.html"><img src="img/h1.png" alt="" style="background: none;" ></a></div>
      <div class="grid-item" style="background-image: url(img/2.jpg);"><a href="Inner pages/home2.html"><img src="img/h1.png" alt="" style="background: none;" ></a></div>
@@ -95,7 +118,7 @@
 
 <!-- Quienes somos -->
 <section id="work" class="parallax-section">
-    <div class="container">
+    <div class="container" id="portfolio">
          <div class="row">
 
               <div class="col-md-12 col-sm-12">
@@ -206,5 +229,27 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/floating-wpp.min.js"></script>
+<script src="js/floating-wpp.js"></script>
+
+
+<div id="myButton"></div>
 </body>
+<script type="text/javascript">
+     $(function () {
+         $('#myButton').floatingWhatsApp({
+             phone: '5491133359850',
+             popupMessage: 'Hola, en que podemos ayudarlo?',
+             message: "hola que tal, mi consulta es:",
+             showPopup: true,
+             showOnIE: false,
+             headerTitle: 'Bienvenidos!',
+             headerColor: 'crimson',
+             backgroundColor: 'crimson',
+             buttonImage: '<img src="burger.svg" />'
+         });
+     });
+ </script>
+
 </html>

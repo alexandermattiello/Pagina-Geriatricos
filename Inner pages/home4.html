@@ -22,6 +22,9 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/floating-wpp.min.css">
+  <link rel="stylesheet" href="css/floating-wpp.css">
+
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -671,5 +674,27 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
-</body>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+  <script src="js/floating-wpp.js"></script>
+  
+  
+  <div id="myButton"></div>
+  </body>
+  <script type="text/javascript">
+       $(function () {
+           $('#myButton').floatingWhatsApp({
+               phone: '5491133359850',
+               popupMessage: 'Hola, en que podemos ayudarlo?',
+               message: "hola que tal, mi consulta es:",
+               showPopup: true,
+               showOnIE: false,
+               headerTitle: 'Bienvenidos!',
+               headerColor: 'crimson',
+               backgroundColor: 'crimson',
+               buttonImage: '<img src="burger.svg" />'
+           });
+       });
+   </script>
+  
 </html>
