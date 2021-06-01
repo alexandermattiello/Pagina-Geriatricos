@@ -100,6 +100,10 @@ nav .logo {
   .menu-icon.active span:after {
     transform: rotate(-135deg);
   }
+  .main-menu {
+    background-color: black;
+    border-radius: 30px;
+  }
 
 /* ------------------------------------------------------------------------
                                 IMAGES
